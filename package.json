@@ -1,0 +1,31 @@
+{
+  "name": "espncricinfo-live-api",
+  "version": "1.0.0",
+  "description": "ESPN Cricinfo  Unofficial Api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gourab28/espncricinfo-live-api.git"
+  },
+  "keywords": [
+    "espncricinfo-live-api",
+    "ESPN",
+    "Cricinfo",
+    "Unofficial",
+    "Api"
+  ],
+  "author": "Gourab Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gourab28/espncricinfo-live-api/issues"
+  },
+  "homepage": "https://github.com/gourab28/espncricinfo-live-api#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "express": "^4.17.1"
+  }
+}
