@@ -4,6 +4,7 @@
 Live Cricket Score API all teams and tournaments.
 
 Live version :
+https://espncricinfo-live-api.herokuapp.com/
 
 ## API Endpoints :
 
