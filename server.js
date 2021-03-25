@@ -2,10 +2,10 @@ const express = require("express");
 
 const app = express();
 app.use(express.static("public"));
+const PORT = process.env.port||'8080';
 
   app.use(require('./router/home'));
   app.use(require('./router/live'));
   
-app.listen(8000,function(){
-  console.log("server started on port 8000")
-})
+// start the server listening for requests
+app.listen(process.env.PORT || 3000, () => console.log("Server is running..."));
