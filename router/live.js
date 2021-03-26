@@ -23,10 +23,10 @@ router.get('/live/', function(req, res) {
           //Total matches win
           const match = $(this).find('div[class="description"]').text();
           const	teamone = $(this).find('div[class="teams"] > div[class="team"] > div[class="name-detail"] > p[class="name"]').eq( 0 ).text();
-           const	teamoneimg = $(this).find('div[class="teams"] > div[class="team"] > div[class="name-detail"]').attr("src");
+           const	teamoneimg = $(this).find('div[class="teams"] > div[class="team"] > div[class="name-detail"]').children('img').eq(0).attr('src');
            const	teamonescore = $(this).find('div[class="teams"] > div[class="team"] > div[class="score-detail"]').eq( 0 ).text();
            const	teamtwo = $(this).find('div[class="teams"] > div[class="team"] > div[class="name-detail"] > p[class="name"]').eq( 1 ).text();
-           const	teamtwoimg = $(this).find('div[class="teams"] > div[class="team"] > div[class="name-detail"]').attr("src");
+           const	teamtwoimg = $(this).find('div[class="teams"] > div[class="team"] > div[class="name-detail"]').children('img').eq(1).attr('src');
            const	teamtwoscore = $(this).find('div[class="teams"] > div[class="team"] > div[class="score-detail"]').eq( 1 ).text();
            const	update = $(this).find('div[class="status-text"]').text();
           //Push
