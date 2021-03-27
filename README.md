@@ -10,7 +10,7 @@ https://espncricinfo-live-api.herokuapp.com/
 
 Base URL: ```http://127.0.0.1:8000```
 * GET ```/live```
-List all the possible all teams and tournaments.
+List all the possible live teams and tournaments.
 
 Example:
 
@@ -41,61 +41,22 @@ Example:
         "teamtwo": "VIC",
         "teamtwoscore": "",
         "update": "Day 1 - Victoria chose to field. CRR: 3.03"
-    },
-    {
-        "status": "stumps",
-        "match": "Final, Durban, Mar 25 - 29 2021, 4-Day Franchise Series",
-        "teamone": "DOLPH",
-        "teamonescore": "(10 ov)31/1",
-        "teamtwo": "TITNS",
-        "teamtwoscore": "",
-        "update": "Day 1 - Dolphins chose to bat. CRR: 3.10"
-    },
-    {
-        "status": "",
-        "match": "3rd ODI, Wellington, Mar 25 2021, Bangladesh tour of New Zealand",
-        "teamone": "New Zealand",
-        "teamonescore": "",
-        "teamtwo": "Bangladesh",
-        "teamtwoscore": "",
-        "update": "Match yet to begin"
-    },
-    {
-        "status": "",
-        "match": "19th Match, Wellington, Mar 25 - 29 2021, Plunket Shield",
-        "teamone": "Wellington",
-        "teamonescore": "",
-        "teamtwo": "Northern Districts",
-        "teamtwoscore": "",
-        "update": "Match yet to begin"
-    },
-    {
-        "status": "",
-        "match": "20th Match, Dunedin, Mar 25 - 29 2021, Plunket Shield",
-        "teamone": "Otago",
-        "teamonescore": "",
-        "teamtwo": "Central Districts",
-        "teamtwoscore": "",
-        "update": "Match yet to begin"
-    },
-    {
-        "status": "live",
-        "match": "Harare, Mar 24 - 27 2021, Logan Cup",
-        "teamone": "EAGLE",
-        "teamonescore": "193",
-        "teamtwo": "SRock",
-        "teamtwoscore": "(108.3 ov)405/9",
-        "update": "Day 2 - Rocks lead by 212 runs. CRR: 3.73"
-    },
-    {
-        "status": "live",
-        "match": "Harare, Mar 24 - 27 2021, Logan Cup",
-        "teamone": "MOUNT",
-        "teamonescore": "290",
-        "teamtwo": "RHINO",
-        "teamtwoscore": "(77.5 ov)261/7",
-        "update": "Day 2 - Rhinos trail by 29 runs. CRR: 3.35"
     }
 ```
+Base URL: ```http://127.0.0.1:8000```
+* GET ```/upcoming```
+List all the possible upcoming cricket match schedules.
 
+Example:
+
+```json
+{"status":"29-mar-2021, 02:00 pm",
+  "match":"2nd Test, North Sound, Mar 29 - Apr 2 2021, Sri Lanka tour of West Indies",
+  "teamone":"West Indies","teamoneimg":"https://wassets.hscicdn.com/static/images/lazyimage.png",
+  "teamtwo":"Sri Lanka",
+  "teamtwoimg":"https://wassets.hscicdn.com/static/images/lazyimage.png",
+  "update":"Match yet to begin"}
+ ```
 Source: https://www.espncricinfo.com/live-cricket-score
+
+Feel free to open an issue for any bugs/features.

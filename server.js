@@ -7,6 +7,7 @@ app.use(cors());
 
   app.use(require('./router/home'));
   app.use(require('./router/live'));
+  app.use(require('./router/upcoming'));
   
 // start the server listening for requests
 app.listen(process.env.PORT || 8080, () => console.log("Server is running..."));

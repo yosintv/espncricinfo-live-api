@@ -3,9 +3,9 @@ const cheerio = require('cheerio');
 const express = require('express');
 const router = express.Router();
 
-router.get('/live/', function(req, res) {
+router.get('/upcoming/', function(req, res) {
 
-   const url = 'https://www.espncricinfo.com/live-cricket-score';
+   const url = 'https://www.espncricinfo.com/live-cricket-match-schedule-fixtures';
       axios({url,
         timeout: 10000 ,
         headers: {
@@ -28,7 +28,7 @@ router.get('/live/', function(req, res) {
         }
       LiveList.each(function(){
         //Team Name
-          const	status = $(this).find('div[class="status red"] > span').text();
+          const	status = $(this).find('div[class="status"] > span').text();
           //Total matches win
           const match = $(this).find('div[class="description"]').text();
           const	teamone = $(this).find('div[class="teams"] > div[class="team"] > div[class="name-detail"] > p[class="name"]').eq( 0 ).text();
@@ -44,10 +44,8 @@ router.get('/live/', function(req, res) {
          match: match,
          teamone: teamone,
          teamoneimg: teamoneimg,
-         teamonescore: teamonescore,
          teamtwo: teamtwo,
          teamtwoimg: teamtwoimg,
-         teamtwoscore: teamtwoscore,
          update: update
          
        });
