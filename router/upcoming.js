@@ -7,7 +7,7 @@ router.get('/upcoming/', function(req, res) {
 
    const url = 'https://www.espncricinfo.com/live-cricket-match-schedule-fixtures';
       axios({url,
-        timeout: 10000 ,
+        timeout: 80000 ,
         headers: {
         "Access-Control-Allow-Origin" : "*",
         "Access-Control-Allow-Headers": "*",
